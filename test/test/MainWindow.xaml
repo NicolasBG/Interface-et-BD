@@ -1,0 +1,181 @@
+﻿<Window x:Class="test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:test"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Menu VerticalAlignment="Top" Height="19">
+            <MenuItem HorizontalAlignment="Left" VerticalAlignment="Top" Header="_Fichier">
+                <MenuItem Header="_Nouveau" InputGestureText="Ctrl+N" ></MenuItem>
+                <MenuItem Header="_Ouvrir" InputGestureText="Ctrl+O" ></MenuItem>
+                <MenuItem Header="_Sauvegarder" InputGestureText="Ctrl+S" ></MenuItem>
+                <MenuItem Header="_Quitter" InputGestureText="Ctrl+Q" ></MenuItem>
+            </MenuItem>
+            <MenuItem HorizontalAlignment="Left" VerticalAlignment="Top" Header="_Edition">
+                <MenuItem Header="_Chandger police" InputGestureText="Ctrl+H" ></MenuItem>
+
+            </MenuItem>
+
+        </Menu>
+
+        <StackPanel Height="400" Width="872" Background="Green" Orientation="Horizontal">
+            
+
+
+            <StackPanel Height="400" Width="722" Background="Black" HorizontalAlignment="Left" Orientation="Vertical" >
+                
+                <DockPanel >
+                    <TextBlock Text="Joueur:" Foreground="White"/>
+                    <TextBox  Width="100" HorizontalAlignment="Right"/>
+                    <TextBlock Foreground="White" Text="Diffculte:"/>
+                    <GroupBox Width="300" >
+
+                        <DockPanel  >
+
+
+                            <RadioButton  Foreground="White" GroupName="Difficulte" Content="Facile" />
+                            <RadioButton  Foreground="White" GroupName="Difficulte" Content="Moyen" />
+                            <RadioButton  Foreground="White" GroupName="Difficulte" Content="Difficile" />
+                        </DockPanel>
+
+                    </GroupBox>
+                </DockPanel>
+                
+                
+                
+                <Expander Background="Gray" Header="Niveau 1" VerticalAlignment="Top" Margin="0,0,10,0" HorizontalAlignment="Left" Width="682">
+
+                    <UniformGrid Columns="5" Rows="5">
+
+                        <Button  Content="Entrer" Height="70" Background="Green" />
+                        <Button  Content=""   Background="Green" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content="Sortie"  Background="Green" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content=""  Background="red" />
+                        <Button  Content=""  Background="red" />
+                        <Button  Content="" Background="Green" />
+                        <Button  Content=""  Background="red" />
+                        <Button  Content="" Background="red" />
+                        <Button  Content=""   Background="Green" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content=""  Background="red" />
+                        <Button  Content=""  Background="red" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content="sortie"  Background="Green" />
+                        <Button  Content="" Background="red" />
+                        <Button  Content="" Background="red" />
+                        <Button  Content=""  Background="red" />
+                        <Button  Content="" Background="Red" />
+                    </UniformGrid>
+                    
+
+                </Expander>
+                
+                <Expander Background="Gray" Header="Niveau 2" VerticalAlignment="Top" Margin="0,0,10,0" HorizontalAlignment="Left" Width="682" >
+                    <UniformGrid Columns="5" Rows="5">
+                        <Button  Content="Entrer" Height="66" Width="160" Background="Green" />
+                        <Button  Content=""   Background="Green" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content=""  Background="red" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content=""  Background="red" />
+                        <Button  Content=""  Background="red" />
+                        <Button  Content="" Background="Green" />
+                        <Button  Content=""  Background="red" />
+                        <Button  Content="" Background="Green" />
+                        <Button  Content=""   Background="Green" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content=""  Background="red" />
+                        <Button  Content=""  Background="red" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content=""  Background="red" />
+                        <Button  Content="" Background="red" />
+                        <Button  Content="" Background="red" />
+                        <Button  Content=""  Background="red" />
+                        <Button  Content="Sortie" Background="Green" />
+                    </UniformGrid>
+                </Expander>
+                <Expander Background="Gray" Header="Niveau 3" VerticalAlignment="Top" HorizontalAlignment="Left" Width="682">
+                    <UniformGrid Columns="5" Rows="5">
+                        <Button  Content="Entrer" Height="66" Width="160" Background="Green" />
+                        <Button  Content=""   Background="Green" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content=""  Background="red" />
+                        <Button  Content=""  Background="red" />
+                        <Button  Content=""  Background="red" />
+                        <Button  Content=""  Background="red" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content="" Background="Green" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content="" Background="Green" />
+                        <Button  Content=""   Background="Green" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content=""  Background="Red" />
+                        <Button  Content=""  Background="Red"  />
+                        <Button  Content=""  Background="red" />
+                        <Button  Content=""  Background="red" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content="" Background="Green" />
+                        <Button  Content="" Background="Green" />
+                        <Button  Content=""  Background="Green" />
+                        <Button  Content="Sortie" Background="Green" />
+                    </UniformGrid>
+                </Expander>
+
+                <Expander Background="Gray" Header="Monstres" VerticalAlignment="Top" Margin="0,0,10,0" HorizontalAlignment="Left" Width="682">
+                    <ListView Name="lesMonstres">
+                        </ListView >
+                </Expander>
+                
+
+
+            </StackPanel>
+            <StackPanel Height="400" Width="70" Background="Black" HorizontalAlignment="Right" >
+                <StackPanel Height="50" Width="50" Background="Black" HorizontalAlignment="Right">
+                    <TextBlock Text="C" FontFamily="Blackadder ITC" FontSize="40" Foreground="White"/>
+                </StackPanel>
+                <StackPanel Height="50" Width="50" Background="Black" HorizontalAlignment="Right">
+                    <TextBlock Text="A" FontFamily="Blackadder ITC" FontSize="40" Foreground="White"/>
+                </StackPanel>
+                <StackPanel Height="50" Width="50" Background="Black" HorizontalAlignment="Right">
+                    <TextBlock Text="R" FontFamily="Blackadder ITC" FontSize="40" Foreground="White"/>
+                </StackPanel>
+                <StackPanel Height="50" Width="50" Background="Black" HorizontalAlignment="Right">
+                    <TextBlock Text="T" FontFamily="Blackadder ITC" FontSize="40" Foreground="White"/>
+                </StackPanel>
+                <StackPanel Height="50" Width="50" Background="Black" HorizontalAlignment="Right" >
+                    <TextBlock Text="E" FontFamily="Blackadder ITC" FontSize="40" Foreground="White"/>
+                </StackPanel>
+                <StackPanel Height="50" Width="50" Background="Black" HorizontalAlignment="Right" >
+                    <TextBlock Text="D" FontFamily="Blackadder ITC" FontSize="40" Foreground="White"/>
+                </StackPanel>
+                <StackPanel Height="50" Width="50" Background="Black" HorizontalAlignment="Right" >
+                    <TextBlock Text="&amp;" FontFamily="Blackadder ITC" FontSize="40" Foreground="White"/>
+                </StackPanel>
+                <StackPanel Height="50" Width="50" Background="Black" HorizontalAlignment="Right" >
+                    <TextBlock Text="D" FontFamily="Blackadder ITC" FontSize="40" Foreground="White"/>
+                </StackPanel>
+            </StackPanel>
+
+        </StackPanel>
+
+
+    </StackPanel>
+</Window>
